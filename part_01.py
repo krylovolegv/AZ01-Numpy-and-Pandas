@@ -1,5 +1,10 @@
 import pandas as pd
 
-df = pd.read_csv('Large language models (2024).csv', encoding='latin1')
-print(df.describe())
+# Чтение CSV файла
+df = pd.read_csv('animal.csv')
+
+# Вывод содержимого DataFrame
+print(df)
+
+df.to_csv('output.csv', index=False)
 
